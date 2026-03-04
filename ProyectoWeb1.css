@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Buenard:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+
+
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Cormorant Garamond", serif;
+    background-color: #F5EFE8;
+    color: #4b2e2e;
+}
+
+/* SECCIONES GENERALES */
+.sections_divs {
+    height: 100vh;
+    padding: 100px 60px;
+    position: relative;
+}
+.sections_divs h1{
+    font-size: 50pt;
+      color: #F5EFE8;
+}
+
+.sections_divs p{
+     font-size: 20pt;
+     color: #F5EFE8;
+}
+.sections_divs .menu{
+    position: absolute;
+    top:0;
+    right: 0;
+    padding: 20px;
+}
+.sections_divs .menu a{
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    transition: all ease 0.5s;
+}
+
+.sections_divs .menu a:hover, .sections_divs .menu .active{
+    color: #ffffff;
+    background-color: #1d1517;
+    padding: 10px;
+    border-radius: 15px;
+    
+}
+
+/* INICIO */
+#inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("imagenes/ImagPagPrincipalReal.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #F5EFE8;
+}
+
+#inicio .hero{
+    text-align: center;
+}
+
+#inicio .hero p{
+    font-style: italic;
+}
+
+/* RECETAS */
+#recetas{
+    background-image: url("imagenes/ImagCheeseReal.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #F5EFE8;
+}
+
+#recetas h2{
+    text-align: center;
+    font-size: 50pt;
+    margin-bottom: 50px;
+}
+
+#recetas h4{
+    font-size: 22pt;
+     color: #F5EFE8;  
+} 
+#recetas .contenido{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(115, 115, 115, 0.46);
+    padding: 50px;
+}
+ 
+#recetas ul{
+     padding: 30px;
+}
+
+#recetas li{
+    font-size: 14pt;
+     color: #F5EFE8; 
+}
+
+
+#recetas .contenido>div{
+    width: 70%;
+}
+
+/* SOBRE */
+#sobre{
+    background-image: url("imagenes/ImagSobreNB.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #F5EFE8;
+}
+
+#sobre .contenido{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    background-color: rgba(115, 115, 115, 0.46);
+    padding: 30px;
+}
+
+#sobre .contenido h2{
+    margin-bottom: 40px;
+    font-size: 50pt;
+    color: #F5EFE8;
+}
+
+#sobre .contenido p{
+    margin-bottom: 25px;
+    font-size: 15pt;
+    color: #F5EFE8;
+}
+
+/* CONTACTO */
+#contacto{
+    background-image: url("imagenes/ImagContacto.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #F5EFE8;
+}
+
+#contacto .contenido{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    background-color: rgba(115, 115, 115, 0.46);
+    padding: 30px;
+}
+
+#contacto .contenido h2{
+    margin-bottom: 20px;
+    font-size: 40pt;
+    color: #F5EFE8;
+}
+
+#contacto .contenido p{
+    font-size: 20pt;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+/* PROYECTOS */
+#proyectos{
+    background-image: url("imagenes/ImagMasProyecto.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #F5EFE8;
+}
+
+#proyectos .contenido{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    background-color: rgba(115, 115, 115, 0.46);
+    padding: 30px;
+}
+
+#proyectos .contenido h2{
+    margin-bottom: 40px;
+    font-size: 40pt;
+    color: #F5EFE8;
+}
+
+#proyectos .contenido h4, #proyectos .contenido h3{
+    margin-bottom: 40px;
+    font-size: 20pt;
+    color: #F5EFE8;
+}
+
+#proyectos .contenido p{
+    margin-bottom: 40px;
+    font-size: 15pt;
+    color: #F5EFE8;
+}
+
+@media screen and (max-width:768px){
+    #recetas .contenido{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: start;
+    }
+
+    #recetas .contenido ol{
+        margin-bottom: 40px;
+    }
+
+    .sections_divs .contenido{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contacto .contenido p{
+        font-size: 20pt;
+        margin-bottom: 50px;
+    }
+}
